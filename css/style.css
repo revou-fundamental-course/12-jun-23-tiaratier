@@ -1,0 +1,60 @@
+/* Mark defult */
+body {
+    font-family: 'Courier New', Courier, monospace;
+}
+header {
+    background-color: aquamarine;
+    color: rgb(3, 59, 41);
+    text-align: center;
+    margin-left: 100px;
+    margin-right: 100px;
+    border-radius: 10px;
+}
+
+label {
+    margin-bottom: 4px;
+    font-size: 18px;
+    font-weight: bold;
+    color: rgb(102, 102, 207);
+}
+
+button {
+    background-color: rgb(9, 77, 77);
+    color: rgb(219, 243, 130);
+    padding: 8px 16px;
+    margin: 5px;
+    border-radius: 7px;
+    cursor: pointer;
+    border: none;
+}
+button:hover {
+    background-color: yellowgreen;
+    color: rgb(9, 77, 77);
+}
+button:active {
+    transform: translateY(2px);
+    background-color: rgb(184, 223, 107);
+}
+
+/* Mark class*/
+#InputSuhu {
+    outline: none;
+    font-size: medium;
+    border-radius: 7px;
+    padding: 7px;
+    border: solid rgb(16, 16, 170);
+}
+#InputSuhu:focus {
+    border: solid skyblue;
+}
+
+.InputSection {
+    display: flex;
+    flex-direction: column;
+}
+
+.InputButtonSection {
+    display: flex;
+    flex-direction: row;
+    align-self: last baseline;
+}
