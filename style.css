@@ -1,0 +1,109 @@
+/* Mark defult */
+body {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+table {
+    background-color: rgb(255, 245, 233);
+    border-radius: 10px;
+    align-self: center baseline;
+    vertical-align:middle;
+    width: 50%;
+    margin: 2%;
+    padding: 2%;
+}
+
+header {
+    background-color: aquamarine;
+    color: rgb(3, 59, 41);
+    text-align: center;
+    margin-left: 100px;
+    margin-right: 100px;
+    border-radius: 10px;
+    width: auto;
+}
+
+label {
+    margin-bottom: 4px;
+    font-size: 18px;
+    font-weight: bold;
+    color: rgb(102, 102, 207);
+    align-self: center;
+}
+
+button {
+    background-color: rgb(9, 77, 77);
+    color: rgb(219, 243, 130);
+    padding: 8px 16px;
+    margin: 5px;
+    border-radius: 7px;
+    cursor: pointer;
+    border: none;
+}
+button:hover {
+    background-color: yellowgreen;
+    color: rgb(9, 77, 77);
+}
+button:active {
+    transform: translateY(2px);
+    background-color: rgb(184, 223, 107);
+}
+
+
+/* Mark class*/
+#InputSuhu {
+    outline: none;
+    font-size: medium;
+    border-radius: 7px;
+    padding: 7px;
+    border: solid rgb(16, 16, 170);
+}
+#InputSuhu:focus {
+    border: solid skyblue;
+}
+
+.InputSectionCF {
+    display: flex;
+    flex-direction: column;
+    background: pink;
+    margin: 25px;
+    padding: 25px;
+    border-radius: 10px;
+}
+
+.InputSectionCR {
+    display: flex;
+    flex-direction: column;
+    background: rgb(177, 235, 243);
+    margin: 25px;
+    padding: 25px;
+    border-radius: 10px;
+}
+
+.SectionReset {
+    display: flex;
+    flex-direction: column;
+    background: rgb(207, 252, 178);
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.InputButtonSection {
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+}
+
+
+@media screen and (max-width: 800px) {
+    header {
+        color: grey;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    header {
+        color: rgb(110, 16, 122);
+    }
+}

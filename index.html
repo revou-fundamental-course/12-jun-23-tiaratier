@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Kalkulator Suhu</title>
+
+</head>
+<body>
+    <table>
+        <tr>
+            <td colspan="2">
+                <header>
+                    <h1 class="title">KALKULATOR SUHU</h1>
+                </header>
+            </td>
+        </tr>
+        <tr>
+            <td width="40%">
+                <!--Blok C ke F-->
+                <section class="InputSectionCF">
+                    <label for="inputField">Celcius ke Fahrenheit</label>&nbsp;
+                    <input type="number" id="inputC">
+                    <div class="InputButtonSection">
+                        <button id="buttonConvert" onclick="celciusfahrenheit()">Konfersi C ke F</button>
+                    </div>
+                    <input type="text" id="hasilF" disabled>&nbsp;
+                    <input type="text" id="catatanCF" disabled>
+                </section>
+                <!--Blok F ke C-->
+                <section class="InputSectionCF">
+                    <label for="inputField">Fahrenheit ke Celcius</label>&nbsp;
+                    <input type="number" id="inputF">
+                    <div class="InputButtonSection">
+                        <button id="buttonConvert" onclick="fahrenheitcelcius()">Konfersi F ke C</button>
+                    </div>
+                    <input type="text" id="hasilC" disabled>&nbsp;
+                    <input type="text" id="catatanFC" disabled>
+                </section>
+            </td>
+            <td width="40%">
+                <!--Blok C ke R-->
+                <section class="InputSectionCR">
+                    <label for="inputField">Celcius ke Reamur</label>&nbsp;
+                    <input type="number" id="inputCR">
+                    <div class="InputButtonSection">
+                        <button id="buttonConvert" onclick="celciusreamur()">Konfersi C ke R</button>
+                    </div>
+                    <input type="text" id="hasilR" disabled>&nbsp;
+                    <input type="text" id="catatanCR" disabled>
+                </section>
+                <!--Blok R ke C-->
+                <section class="InputSectionCR">
+                    <label for="inputField">Reamur ke Celcius</label>&nbsp;
+                    <input type="number" id="inputR">
+                    <div class="InputButtonSection">
+                        <button id="buttonConvert" onclick="reamurcelcius()">Konfersi R ke C</button>
+                    </div>
+                    <input type="text" id="hasilRC" disabled>&nbsp;
+                    <input type="text" id="catatanRC" disabled>
+                </section>
+            </td>
+        </tr>
+
+        <tr>
+            <td colspan="2">
+                <!--Tombol Reset-->
+                <section class="SectionReset">
+                <div class="InputButtonSection">
+                <button id="buttonReset" onclick="hapusall()">Reset Semua Hasil</button>
+                </div>
+                </section>
+            </td>
+        </tr>
+    </table>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
